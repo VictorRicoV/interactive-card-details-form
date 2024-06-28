@@ -1,1 +1,29 @@
+.text-number {
+  position: absolute;
+  top: 85px;
+  left: 20px;
+}
+.text-card {
+  position: absolute;
+  top: 124px;
+  left: 20px;
+  font-size: 9px;
+  letter-spacing: 1.29px;
+}
+.date-card {
+  position: absolute;
+  left: 211px;
+}
+.text-cardback {
+  position: absolute;
+  top: 73px;
+  left: 229px;
+  font-size: 9px;
+  letter-spacing: 1.29px;
+}
 
+.text-error {
+  font-size: 0.75rem;
+  color: #ff5050;
+  margin: 0;
+}

@@ -1,7 +1,50 @@
 .cards {
-  padding: 32px 16px 48px;
-  background-image: url(/assets/images/bg-main-mobile.png);
-  background-size: 375px 240px;
-  background-repeat: no-repeat;
+  position: relative;
+  top: 32px;
+  left: 16px;
+  width: 343px;
+  height: 251px;
   color: white;
+  margin-bottom: 80px;
+}
+
+.card-back {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.card-front {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.img-cardFront {
+  width: 286px;
+  height: 157px;
+  box-shadow: 0 39px 60px rgba(0, 0, 0, 0.13);
+}
+.img-cardBack {
+  width: 286px;
+  height: 157px;
+}
+
+.card-logo {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 54px;
+  height: 30px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cvc-mmyy {
+  display: flex;
+  gap: 0.6875rem;
+  margin-bottom: 0.5rem;
 }
