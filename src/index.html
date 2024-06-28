@@ -2,14 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/png"
+    />
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
   </head>
   <body>
-    
+    <section class="cards">
+      <div class="card-front">
+        <img
+          class="img-cardFront"
+          src="./assets/images/bg-card-front.png"
+          alt="card-front"
+        />
+        <span class="number-card">0000 0000 0000 0000</span>
+        <div class="text-card">
+          <span class="name-card">JANE APPLESEED</span>
+          <span class="date-card">00/00</span>
+        </div>
+      </div>
+      <div class="card-back">
+        <img
+          class="img-carBack"
+          src="./assets/images/bg-card-back.png"
+          alt="card-back"
+        />
+        <span class="text-card">000</span>
+      </div>
+    </section>
+    <main class="main">
+      <div>
+        <form id="form" class="cardForm">
+          <label for="name" class="label">Cardholder Name</label>
+          <input
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+            id="name"
+            class="card-input"
+          />
+          <label for="number" class="label">Card Number</label>
+          <input
+            type="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+            id="number"
+            class="card-input"
+          />
+          <section class="cvc-mmyy">
+            <div>
+              <label for="date" class="label">Exp.Date (MM/YY)</label>
+              <input
+                type="text"
+                placeholder="MM"
+                id="date"
+                class="card-input--s"
+              />
+              <input
+                type="text"
+                placeholder="YY"
+                id="year"
+                class="card-input--s"
+              />
+            </div>
+            <div>
+              <label for="cvc" class="label">CVC</label>
+              <input
+                type="text"
+                placeholder="e.g.123"
+                id="cvc"
+                class="card-input--s"
+              />
+            </div>
+          </section>
+          <input type="submit" value="Confirm" class="button" />
+        </form>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
